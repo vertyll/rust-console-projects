@@ -1,0 +1,8 @@
+// Utworzenie bazy danych 'mydb'
+use test
+
+// Utworzenie kolekcji 'mycollection'
+db.createCollection("mycollection")
+
+// Dodanie przykładowego wpisu
+db.mycollection.insertOne({ name: "Example", value: 123 })

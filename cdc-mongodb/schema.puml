@@ -1,0 +1,29 @@
+@startuml
+
+package "CDC Application in Rust" {
+    [main.rs] - [change_stream_handlers.rs]
+    [main.rs] - [kafka_producer.rs]
+    [main.rs] - [mongo_connection.rs]
+    [main.rs] - [models.rs]
+
+    [change_stream_handlers.rs] --> [kafka_producer.rs] : wysyła dane do\nKafki
+    [change_stream_handlers.rs] --> [models.rs] : używa modeli danych
+
+    [kafka_producer.rs] ..> [models.rs] : używa modeli danych
+
+    [mongo_connection.rs] --> [models.rs] : używa modeli danych
+
+    database "MongoDB" {
+        frame "Change Streams" {
+            [change_stream_handlers.rs]
+        }
+    }
+
+    queue "Kafka" {
+        frame "Topics" {
+            [kafka_producer.rs]
+        }
+    }
+}
+
+@enduml

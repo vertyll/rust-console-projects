@@ -1,0 +1,39 @@
+@startuml
+
+package "main.rs" {
+    [main]
+}
+
+package "models" {
+    [Movie]
+    [OtherModel]
+}
+
+package "db_access" {
+    [Database Access Functions]
+}
+
+package "handlers" {
+    [Movie Handlers]
+    [Other Handlers]
+}
+
+package "routes" {
+    [Route Configurations]
+}
+
+package "state" {
+    [AppState]
+}
+
+[main] ..> [Route Configurations]: używa
+[Route Configurations] ..> [Movie Handlers]: mapuje
+[Route Configurations] ..> [Other Handlers]: mapuje
+[Movie Handlers] ..> [Database Access Functions]: wywołuje
+[Other Handlers] ..> [Database Access Functions]: wywołuje
+[Database Access Functions] ..> [Movie]: operuje na
+[Database Access Functions] ..> [OtherModel]: operuje na
+[Movie Handlers] ..> [AppState]: wykorzystuje
+[Other Handlers] ..> [AppState]: wykorzystuje
+
+@enduml
