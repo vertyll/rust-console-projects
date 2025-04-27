@@ -2,7 +2,7 @@
 
 This project contains implementations of popular Unix console tools written in the Rust programming language.
 
-## Zaimplementowane narzędzia
+## Implemented Tools
 
 - cat - displays file contents
 - clap - command line argument parsing tool
