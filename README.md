@@ -1,4 +1,4 @@
-# Rust Console Projects
+# Rust console projects
 
 This project contains implementations of popular Unix console tools written in the Rust programming language.
 
