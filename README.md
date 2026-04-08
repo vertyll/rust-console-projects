@@ -4,8 +4,8 @@ This project contains implementations of popular Unix console tools written in t
 
 ## Implemented Tools
 
-- cat - displays file contents
-- clap - command line argument parsing tool
-- echo - displays given arguments
-- tail - displays the end lines of a file
-- wc - counts lines, words, and characters in a file
+- cat – displays file contents
+- clap – command line argument parsing tool
+- echo – displays given arguments
+- tail – displays the end lines of a file
+- wc – counts lines, words, and characters in a file
