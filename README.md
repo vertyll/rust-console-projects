@@ -9,3 +9,5 @@ This project contains implementations of popular Unix console tools written in t
 - echo – displays given arguments
 - tail – displays the end lines of a file
 - wc – counts lines, words, and characters in a file
+
+> Tests have been written for the tools.
