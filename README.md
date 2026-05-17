@@ -1,4 +1,4 @@
-# Rust Console Projects
+## Project Assumptions
 
 This project contains implementations of popular Unix console tools written in the Rust programming language.
 
