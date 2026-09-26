@@ -1,15 +1,68 @@
-## Project Assumptions
+# Rust Console Projects
 
-This project contains implementations of popular Unix console tools written in the Rust programming language.
+A collection of Rust projects covering CLI tools, REST APIs, database integration, and event-driven applications.
 
-## Implemented Tools
+## Projects
 
-- cat – displays file contents.
-- clap – command line argument parsing tool.
-- echo – displays given arguments.
-- tail – displays the end lines of a file.
-- wc – counts lines, words, and characters in a file.
+| Project                   | Description                                              | Technologies                      |
+| ------------------------- | -------------------------------------------------------- | --------------------------------- |
+| `cat`                     | Basic implementation of the Unix `cat` command           | Rust, Clap                        |
+| `echo`                    | CLI implementation of `echo`                             | Rust, Clap                        |
+| `echo-clap`               | `echo` implementation using the `clap` derive API        | Rust, Clap                        |
+| `echo-std`                | Minimal `echo` implementation using the standard library | Rust                              |
+| `wc`                      | Basic implementation of the Unix `wc` command            | Rust, Clap                        |
+| `tail`                    | Basic implementation of the Unix `tail` command          | Rust, Clap, Regex                 |
+| `regex-once`              | Example of reusing a compiled regular expression         | Rust, Regex, Once Cell            |
+| `clap-examples`           | Examples of building CLI applications with `clap`        | Rust, Clap                        |
+| `rest-backed-by-postgres` | REST API backed by PostgreSQL                            | Rust, Actix Web, SQLx, PostgreSQL |
+| `rest-db-factory`         | REST API with an abstract database access layer          | Rust, Actix Web, SQLx, PostgreSQL |
+| `cdc-mongodb`             | Change Data Capture pipeline from MongoDB to Kafka       | Rust, MongoDB, Kafka, rdkafka     |
 
-> [!NOTE]
-> 
-> Tests have been written for the tools.
+## Requirements
+
+* Rust
+* Cargo
+* Docker
+* PostgreSQL
+* MongoDB
+
+## Running
+
+Each project is a separate Cargo project.
+
+```bash
+cd <project>
+cargo run
+```
+
+Build:
+
+```bash
+cargo build
+```
+
+Tests:
+
+```bash
+cargo test
+```
+
+Projects requiring external infrastructure use Docker Compose:
+
+```bash
+docker compose up -d
+```
+
+## Technologies
+
+* Rust
+* Cargo
+* Tokio
+* Clap
+* Actix Web
+* SQLx
+* PostgreSQL
+* MongoDB
+* Apache Kafka
+* Docker
+* Serde

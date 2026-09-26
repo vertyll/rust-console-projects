@@ -20,6 +20,4 @@ impl DatabaseAccess for PostgresDB {
             .await?;
         Ok(())
     }
-
-    // Tutaj dodaj implementacje innych metod
 }

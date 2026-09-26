@@ -1,6 +1,6 @@
 use rdkafka::producer::{FutureProducer, FutureRecord};
 use rdkafka::config::ClientConfig;
-use std::time::Duration; // Dodaj import
+use std::time::Duration;
 
 pub struct KafkaProducer {
     producer: FutureProducer,

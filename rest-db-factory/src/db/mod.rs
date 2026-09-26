@@ -6,4 +6,3 @@ mod mongo_db;
 
 pub use db_access_trait::DatabaseAccess;
 pub use postgres_db::PostgresDB;
-// Eksportuj MongoDB gdy będzie gotowy
