@@ -4,19 +4,19 @@ A collection of Rust projects covering CLI tools, REST APIs, database integratio
 
 ## Projects
 
-| Project                   | Description                                              | Technologies                      |
-| ------------------------- | -------------------------------------------------------- | --------------------------------- |
-| `cat`                     | Basic implementation of the Unix `cat` command           | Rust, Clap                        |
-| `echo`                    | CLI implementation of `echo`                             | Rust, Clap                        |
-| `echo-clap`               | `echo` implementation using the `clap` derive API        | Rust, Clap                        |
-| `echo-std`                | Minimal `echo` implementation using the standard library | Rust                              |
-| `wc`                      | Basic implementation of the Unix `wc` command            | Rust, Clap                        |
-| `tail`                    | Basic implementation of the Unix `tail` command          | Rust, Clap, Regex                 |
-| `regex-once`              | Example of reusing a compiled regular expression         | Rust, Regex, Once Cell            |
-| `clap-examples`           | Examples of building CLI applications with `clap`        | Rust, Clap                        |
-| `rest-backed-by-postgres` | REST API backed by PostgreSQL                            | Rust, Actix Web, SQLx, PostgreSQL |
-| `rest-db-factory`         | REST API with an abstract database access layer          | Rust, Actix Web, SQLx, PostgreSQL |
-| `cdc-mongodb`             | Change Data Capture pipeline from MongoDB to Kafka       | Rust, MongoDB, Kafka, rdkafka     |
+| Project                   | Description                                              |
+| ------------------------- | -------------------------------------------------------- |
+| `cat`                     | Basic implementation of the Unix `cat` command           |
+| `echo`                    | CLI implementation of `echo`                             |
+| `echo-clap`               | `echo` implementation using the `clap` derive API        |
+| `echo-std`                | Minimal `echo` implementation using the standard library |
+| `wc`                      | Basic implementation of the Unix `wc` command            |
+| `tail`                    | Basic implementation of the Unix `tail` command          |
+| `regex-once`              | Example of reusing a compiled regular expression         |
+| `clap-examples`           | Examples of building CLI applications with `clap`        |
+| `rest-backed-by-postgres` | REST API backed by PostgreSQL                            |
+| `rest-db-factory`         | REST API with an abstract database access layer          |
+| `cdc-mongodb`             | Change Data Capture pipeline from MongoDB to Kafka       |
 
 ## Requirements
 
