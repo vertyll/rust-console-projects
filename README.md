@@ -28,7 +28,7 @@ A collection of Rust projects covering CLI tools, REST APIs, database integratio
 
 ### Event-Driven & Streaming
 
-* **`cdc-mongodb`** – A Change Data Capture (CDC) pipeline streaming data changes from MongoDB to Apache Kafka.
+* **`cdc-mongodb`** – A CDC pipeline streaming data changes from MongoDB to Apache Kafka.
 
 ## Requirements
 
