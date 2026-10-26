@@ -4,27 +4,39 @@ A collection of Rust projects covering CLI tools, REST APIs, database integratio
 
 ## Projects
 
-| Project                   | Description                                              |
-| ------------------------- | -------------------------------------------------------- |
-| `cat`                     | Basic implementation of the Unix `cat` command           |
-| `echo`                    | CLI implementation of `echo`                             |
-| `echo-clap`               | `echo` implementation using the `clap` derive API        |
-| `echo-std`                | Minimal `echo` implementation using the standard library |
-| `wc`                      | Basic implementation of the Unix `wc` command            |
-| `tail`                    | Basic implementation of the Unix `tail` command          |
-| `regex-once`              | Example of reusing a compiled regular expression         |
-| `clap-examples`           | Examples of building CLI applications with `clap`        |
-| `rest-backed-by-postgres` | REST API backed by PostgreSQL                            |
-| `rest-db-factory`         | REST API with an abstract database access layer          |
-| `cdc-mongodb`             | Change Data Capture pipeline from MongoDB to Kafka       |
+### CLI Utilities & Unix Commands
+
+* **`cat`** – Basic implementation of the classic Unix `cat` command.
+* **`wc`** – Basic implementation of the Unix `wc` (word count) command.
+* **`tail`** – Basic implementation of the Unix `tail` command.
+
+### Echo Implementations
+
+* **`echo`** – Standard CLI implementation of the `echo` command.
+* **`echo-clap`** – Advanced `echo` implementation leveraging the `clap` derive API for argument parsing.
+* **`echo-std`** – Minimal `echo` implementation built using only the Rust standard library.
+
+### CLI Development & Regex
+
+* **`regex-once`** – Practical example demonstrating how to efficiently reuse a compiled regular expression.
+* **`clap-examples`** – Comprehensive examples of building robust command-line applications using `clap`.
+
+### Web & Database Applications
+
+* **`rest-backed-by-postgres`** – A fully functional REST API backed by a PostgreSQL database.
+* **`rest-db-factory`** – A REST API featuring an abstract database access layer for flexible data management.
+
+### Event-Driven & Streaming
+
+* **`cdc-mongodb`** – A Change Data Capture (CDC) pipeline streaming data changes from MongoDB to Apache Kafka.
 
 ## Requirements
 
-* Rust
-* Cargo
-* Docker
-* PostgreSQL
-* MongoDB
+- Rust
+- Cargo
+- Docker
+- PostgreSQL
+- MongoDB
 
 ## Running
 
@@ -34,35 +46,3 @@ Each project is a separate Cargo project.
 cd <project>
 cargo run
 ```
-
-Build:
-
-```bash
-cargo build
-```
-
-Tests:
-
-```bash
-cargo test
-```
-
-Projects requiring external infrastructure use Docker Compose:
-
-```bash
-docker compose up -d
-```
-
-## Technologies
-
-* Rust
-* Cargo
-* Tokio
-* Clap
-* Actix Web
-* SQLx
-* PostgreSQL
-* MongoDB
-* Apache Kafka
-* Docker
-* Serde
